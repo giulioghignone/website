@@ -8,8 +8,7 @@ nav ul {
     position: fixed;
     display: inline-flex;
     align-items: center;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact;
     font-size: large;
     color: #fff;
     }
@@ -41,6 +40,7 @@ section {
     position: inline-flex;
 }
 #imgcontent {
+    width: 100%;
     position: fixed;
     justify-content: baseline;
     z-index: 1;
@@ -48,4 +48,9 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: baseline;
+}
+#menuitems {
+    display: inline-flex;
+    justify-content: end;
+    width: 100%;
 }
