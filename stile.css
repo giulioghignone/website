@@ -1,31 +1,16 @@
 body{padding: 0px; margin: 0px;}
-.colonna{width: 50%; height: 700px; float: left;}
-.colonnaSX{background-color: blue;}
-.colonnaDX{background-color: darkorange;}
-
-/*VISUALIZZAZIONE PC*/
-@media (max-width: 1200px) {
-    .colonnaSX{background-color: blue;}
-    .colonnaDX{background-color: darkorange;}
-}
 
 /*VISUALIZZAZIONE TABLET*/
 @media (max-width: 980px) {
-    .colonnaSX{background-color: blue;}
-    .colonnaDX{background-color: darkorange;}
-    .colonna{height: 300px;}
 
 }
 
 /*VISUALIZZAZIONE SMARTPHONE ORIZZONTALE*/
 @media (max-width: 767px) {
-    .colonnaSX{background-color: blue;}
-    .colonnaDX{background-color: darkorange;}
-    .colonna{height: 400px; width: 100%; }    
+ 
 }
 
 /*VISUALIZZAZIONE SMARTPHONE VERTICALE*/
 @media (max-width: 480px) {
-    .colonnaSX{background-color: blue;}
-    .colonnaDX{background-color: darkorange;}    
+
 }
