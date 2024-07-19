@@ -1,13 +1,34 @@
 <!DOCTYPE html>
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-	<title>Il sito di Giulio Ghignone</title>
-	<link href="stile.css" rel="stylesheet">
-	<link href="immagini/favicon.gif" rel="icon">
-
-    <meta name="viewport" content="width-device-width, initial-scale-1">
-    
+    <title>Il sito di Giulio Ghignone</title>
+    <link href="stile.css" rel="stylesheet">
+    <link href="immagini/favicon.gif" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
+<header>
+    <a href="javascript:void(0)" class="menubtn" onClick="toggle()">&#9776;</a>
+    <div class="logo"><img src="logo.png" class="logo2"></div>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chisono.html">Chi sono</a></li>
+            <li><a href="link.html">Link</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+    </nav>
+</header>
 </body>
+<script>
+    function toggle() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.style.display === "none" || navbar.style.display === "") {
+            navbar.style.display = "block";
+        } else {
+            navbar.style.display = "none";
+        }
+    }
+</script>
+</html>

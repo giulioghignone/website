@@ -1,20 +1,90 @@
 body{padding: 0px; margin: 0px;}
-.colonna{width: 50%; height: 700px; float: left;}
-.colonnaSX{background-color: blue;}
-.colonnaDX{background-color: darkorange;}
-
-/*VISUALIZZAZIONE PC*/
-@media (max-width: 1200px) {
+.logo {
+    width: 100%;
+    background-color: rgb(0, 135, 246);
+    display: inline-flex;
+    justify-content: center;
+    padding: 20px 0px 10px 0px;
 }
 
-/*VISUALIZZAZIONE TABLET*/
-@media (max-width: 980px) {
+.logo2 {width: 380px;}
+
+.menubtn {display: none;}
+
+#navbar {display: flex;}
+
+nav ul {
+    width: 100%;
+    background-color: rgb(0, 135, 246);
+    display: inline-flex;
+    text-align: left;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    list-style: none;
+    justify-content: center;
 }
 
-/*VISUALIZZAZIONE SMARTPHONE ORIZZONTALE*/
-@media (max-width: 767px) {   
+nav ul li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 21pt;
+    display: flex;
+    position: relative;
+    margin: 0px;
+    padding: 10px 50px;
+    color: white;
+    cursor: pointer;
 }
+
+nav ul li:hover {
+    background-color: rgba(190, 190, 190, 0.61);
+    border-radius: 50px;
+}
+
+nav ul li a {color: white;}
+
 
 /*VISUALIZZAZIONE SMARTPHONE VERTICALE*/
 @media (max-width: 480px) {
+    body{padding: 0px; margin: 0px;}
+    .logo2 {
+        width: 260px;
+        display: flex;
+        margin: 10px 10px 10px 0px;
+        padding: 0;
+    }
+    .logo {
+        width: 100%;
+        background-color: rgb(0, 135, 246);
+        display: inline-flex;
+        justify-content: end;
+        padding: 0;
+        margin: 0;
+    }
+    .menubtn {
+        text-decoration: none;
+        position: absolute;
+        color: white;
+        font-size: 30pt;
+        left: 15px;
+        top: 10px;
+        display: block;
+    }
+
+    #navbar {display: none;}
+
+    nav ul {
+        display: block;
+        text-align: center;
+        justify-items: center;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        display: block;
+        background-color: rgb(0, 135, 246);
+        padding: 10px 0px;
+        margin: 0;
+    }
+    nav ul li:hover {border-radius: 0;}
 }
