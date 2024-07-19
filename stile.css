@@ -74,6 +74,7 @@ nav ul li a {color: white;}
 
     nav ul {
         display: block;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
         justify-items: center;
         background-color: transparent;
