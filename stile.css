@@ -1,27 +1,28 @@
 body{padding: 0px; margin: 0px;}
-.logo {
-    width: 100%;
-    background-color: rgb(0, 135, 246);
-    display: inline-flex;
-    justify-content: center;
-    padding: 20px 0px 10px 0px;
-}
-
-.logo2 {width: 380px;}
 
 .menubtn {display: none;}
 
-#navbar {display: flex;}
+#navbar {
+    display: flex;
+    background-color: rgb(0, 135, 246);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 380px;
+    display:flex;
+    padding: 0;
+    margin: 10px 30px 10px 0px;
+}
 
 nav ul {
-    width: 100%;
-    background-color: rgb(0, 135, 246);
-    display: inline-flex;
+    display: flex;
     text-align: left;
     margin: 0px;
-    padding: 10px 0px 10px 0px;
+    padding: 0;
     list-style: none;
-    justify-content: center;
 }
 
 nav ul li {
@@ -30,7 +31,7 @@ nav ul li {
     display: flex;
     position: relative;
     margin: 0px;
-    padding: 10px 50px;
+    padding: 10px 30px;
     color: white;
     cursor: pointer;
 }
@@ -46,20 +47,7 @@ nav ul li a {color: white;}
 /*VISUALIZZAZIONE SMARTPHONE VERTICALE*/
 @media (max-width: 480px) {
     body{padding: 0px; margin: 0px;}
-    .logo2 {
-        width: 260px;
-        display: flex;
-        margin: 10px 10px 10px 0px;
-        padding: 0;
-    }
-    .logo {
-        width: 100%;
-        background-color: rgb(0, 135, 246);
-        display: inline-flex;
-        justify-content: end;
-        padding: 0;
-        margin: 0;
-    }
+    
     .menubtn {
         text-decoration: none;
         position: absolute;
@@ -67,12 +55,28 @@ nav ul li a {color: white;}
         font-size: 30pt;
         left: 15px;
         top: 10px;
+        display: flex;
+    }
+    #navbar {
+        width: 100%;
+        background-color: rgb(0, 135, 246);
         display: block;
     }
+    .imgcont {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        width: 260px;
+    }
 
-    #navbar {display: none;}
+    #links {display: none;}
 
     nav ul {
+        position: relative;
         display: block;
         text-align: center;
         justify-items: center;
@@ -88,5 +92,8 @@ nav ul li a {color: white;}
         padding: 10px 0px;
         margin: 0;
     }
-    nav ul li:hover {border-radius: 0;}
+    nav ul li:hover {
+        border-radius: 0;
+        background-color: rgba(190, 190, 190, 0.61);
+    }
 }
