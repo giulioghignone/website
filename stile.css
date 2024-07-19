@@ -43,8 +43,6 @@ nav ul li a {
     color: white;
 }
 
-article{background-image: url(bg.jpg)}
-
 /*VISUALIZZAZIONE PC BASSA RISOLUZIONE - TABLET ORIZZONTALE E VERTICALE - SMARTPHONE ORIZZONTALE*/
 @media (max-width: 1024px) {
     body {padding: 0; margin: 0;}
@@ -92,14 +90,16 @@ article{background-image: url(bg.jpg)}
     
     .menubtn {
         text-decoration: none;
-        position: absolute;
+        position: fixed;
         color: white;
         font-size: 30pt;
-        left: 15px;
-        top: 10px;
+        right: 15px;
+        top: 5px;
         display: flex;
+        z-index: 1;
     }
     #navbar {
+        position: fixed;
         width: 100%;
         background-color: rgb(0, 135, 246);
         display: block;
@@ -107,36 +107,41 @@ article{background-image: url(bg.jpg)}
     .imgcont {
         display: flex;
         width: 100%;
-        justify-content: end;
+        justify-content: left;
         align-items: center;
         padding: 0;
         margin: 0;
     }
     .logo {
         display: flex;
-        width: 260px;
+        width: 200px;
         padding: 0;
-        margin: 10px 15px 10px 0px;
+        margin: 10px 0px 10px 15px;
     }
 
-    #links {display: none;}
+    #links {
+        display: none;
+        justify-content: center;
+        text-align: center;
+        }
 
     nav ul {
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        position: relative;
-        font-size: 12pt;
+        position: absolute;
+        background-color: rgb(0, 135, 246);
+        font-size: 8pt;
         display: block;
         text-align: center;
         justify-items: center;
-        background-color: transparent;
         padding: 0;
-        margin: 0;
+        width: 85%;
+        margin: 0px;
     }
     nav ul li {
         display: block;
-        background-color: rgb(0, 135, 246);
-        padding: 10px 0px;
+        background-color: rgba(0, 135, 246, 0.785);
+        padding: 11px 0px;
         margin: 0;
     }
     nav ul li:hover {
